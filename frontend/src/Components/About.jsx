@@ -5,7 +5,7 @@ const items = [
   {
     id: 1,
     title: "Our Print Story",
-    img: "offset -1.jpg",
+    img: "offset-1.jpg",
     desc: "Our company, THE SARASWATHI OFFSET PRINTERS, was established as a sister concern to Sri Krishna Fireworks in 1968. Over time, we evolved to support external clients by providing high-quality packaging materials. Our ability to make prompt decisions allows us to meet customer needs with greater precision, ensuring the required quality at every production stage. Our facility is equipped with advanced machinery, enabling us to serve clients from diverse market segments.",
   },
   {
