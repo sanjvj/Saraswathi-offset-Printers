@@ -10,13 +10,13 @@ const items = [
   },
   {
     id: 2,
-    title: "Vision",
+    title: "Our Vision",
     img: "offset-2.jpg",
     desc: "Saraswathi Offset Printers aims to be the industry leader in innovative and sustainable printing solutions, delivering unmatched quality and customer satisfaction. We are dedicated to advancing our technology and processes, fostering a culture of excellence, and creating lasting value for our clients and community through responsible practices.",
   },
   {
     id: 3,
-    title: "Mission",
+    title: "Our Mission",
     img: "offset-3.jpg",
     desc: "Saraswathi Offset Printers is dedicated to providing high-quality, innovative, and sustainable printing solutions. We prioritize exceptional customer service, cutting-edge technology, and a supportive work environment to consistently exceed client expectations and build lasting relationships.",
   },
@@ -45,8 +45,8 @@ const Single = ({ item }) => {
       </div>
       <div className="flex-1 flex items-center justify-center text-xl mt-5">
         <motion.div style={{ y: yText }}>
-          <h2 className="text-4xl font-bold mb-4">{item.title}</h2>
-          <p className="font-light text-2xl text-gray-700">{item.desc}</p>
+          <h2 className="text-6xl font-bold mb-4">{item.title}</h2>
+          <p className="font-normal text-2xl ">{item.desc}</p>
         </motion.div>
       </div>
     </section>
@@ -66,14 +66,14 @@ const About = () => {
   });
 
   return (
-    <div className="relative mt-20 mx-5 lg:mx-52" ref={ref}>
-      <div className="lg:sticky top-0 left-0 pt-10 text-center text-8xl font-bold">
+    <div className="relative mt-20 " ref={ref}>
+      <div className="lg:sticky bg-black z-10 top-0 left-0 pt-10 text-center text-8xl font-bold">
         <h1 className="bg-gradient-to-r from-sky-400 to-pink-400 bg-clip-text text-transparent">
           ABOUT US
         </h1>
-        <motion.div className="h-2 bg-black mt-4" style={{ scaleX }}></motion.div>
+        <motion.div className="h-2 bg-red-200 mt-4" style={{ scaleX }}></motion.div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mx-5 lg:mx-52">
         {items.map((item) => (
           <Single item={item} key={item.id} />
         ))}
