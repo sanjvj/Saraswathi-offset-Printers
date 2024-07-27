@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="mt-20 mx-52"><h1 className="text-6xl mb-10 mt-20">About Us</h1>
+    <div className="mt-20 mx-52 h-screen"><h1 className="text-6xl mb-10 mt-20">About Us</h1>
     <div className=" flex gap-24">
     <div>
       <img src="offset -1.jpg" alt="Offset Printer" className="h-auto w-auto rounded-xl"></img>

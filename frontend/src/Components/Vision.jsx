@@ -2,9 +2,9 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div>
-      <div>
-        <h1>Vision</h1>
+    <div className="mt-20 mx-52 h-screen">
+    
+        <h1 className="">Vision</h1>
         <p>
           Saraswathi Offset Printers aims to be the industry leader in
           innovative and sustainable printing solutions, delivering unmatched
@@ -13,18 +13,7 @@ const Vision = () => {
           creating lasting value for our clients and community through
           responsible practices
         </p>
-      </div>
-
-      <div>
-        <h1>Mission</h1>
-        <p>
-          Saraswathi Offset Printers is dedicated to providing high-quality,
-          innovative, and sustainable printing solutions. We prioritize
-          exceptional customer service, cutting-edge technology, and a
-          supportive work environment to consistently exceed client expectations
-          and build lasting relationships.
-        </p>
-      </div>
+   
     </div>
   );
 };
