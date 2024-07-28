@@ -1,9 +1,10 @@
 import About from "./Components/About";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
-import Vision from "./Components/Vision";
+
 import "./App.css"
-import Mission from "./Components/Mission";
+import Workflow from "./Components/Workflow";
+
 function App() {
   return (
     <>
@@ -11,8 +12,7 @@ function App() {
       <section><Navbar></Navbar></section>
       <section><Hero></Hero></section>
       <section><About></About></section>
-      <section><Vision></Vision></section>
-      <section><Mission></Mission></section>
+      <section><Workflow></Workflow></section>
     </>
   );
 }
