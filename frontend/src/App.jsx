@@ -11,7 +11,7 @@ function App() {
       <section><Navbar></Navbar></section>
       <section><Hero></Hero></section>
       <section><About></About></section>
-      <section><Workflow></Workflow></section>
+      <section><Workflow /></section>
     </>
   );
 }
