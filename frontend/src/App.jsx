@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import "./App.css"
 import Workflow from "./Components/Workflow";
 import PlantLayout from "./Components/PlantLayout";
+import Client from "./Components/Client";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <section><About></About></section>
       <section><Workflow /></section>
       <section><PlantLayout></PlantLayout></section>
+      <Client></Client>
     </>
   );
 }

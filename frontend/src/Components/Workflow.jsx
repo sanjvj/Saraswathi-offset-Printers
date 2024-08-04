@@ -2,7 +2,7 @@ import React from "react";
 import "../index.css";
 const Workflow = () => {
   return (
-    <div>
+    <div className="">
       <h1 className="text-5xl font-normal my-20 text-center">
         Walk Through our Workflow
       </h1>
