@@ -5,13 +5,15 @@ import { useInView } from 'react-intersection-observer';
 const WorkflowAnimation = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5,
   });
 
   useEffect(() => {
     if (inView) {
       controls.start('visible');
+    } else {
+      controls.start('hidden');
     }
   }, [controls, inView]);
 
@@ -33,16 +35,22 @@ const WorkflowAnimation = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen flex items-center justify-center relative">
+    <div className="min-h-screen flex items-center justify-center relative bg-white">
       <div className="text-center">
-        <h1 className="text-xl mb-10">Scroll to see a workflow animation</h1>
+        <h1 className="text-6xl mb-10">Walk through our Workflow</h1>
         <div className="relative max-w-5xl mx-auto" ref={ref}>
-          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" className="svg-container">
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" className="svg-container">
             <motion.path
-              d="M 150 100 V 200 H 500 V 200 H 500 V 400 H 150 V 400 H 150 V 1000 H 500 V 1000"
+              d="M 200 150
+                 V 350
+                 C 200 450, 300 450, 300 350
+                 H 500
+                 C 600 350, 600 450, 500 450
+                 H 200
+                 V 750"
               fill="none"
-              stroke="white"
-              strokeWidth="20px"
+              stroke="black"
+              strokeWidth="5px"
               initial="hidden"
               animate={controls}
               variants={lineVariants}
@@ -64,7 +72,7 @@ const WorkflowAnimation = () => {
             initial="hidden"
             animate={controls}
             variants={boxVariants}
-            style={{ top: '400px', left: '300px' }}
+            style={{ top: '320px', left: '400px' }}
           >
             <h2>Press</h2>
             <p>Printing tasks for CPC, P14, P24, and P28 will be executed at this facility.</p>
@@ -74,7 +82,7 @@ const WorkflowAnimation = () => {
             initial="hidden"
             animate={controls}
             variants={boxVariants}
-            style={{ top: '800px', left: '50px' }}
+            style={{ top: '650px', left: '50px' }}
           >
             <h2>Post-Press</h2>
             <p>Job finishing tasks, such as cutting, die cutting, and scoring, will be carried out at this facility.</p>

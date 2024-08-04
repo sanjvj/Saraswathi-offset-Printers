@@ -2,8 +2,8 @@ import React from 'react'
 
 const PlantLayout = () => {
   return (
-    <div>
-      
+    <div className='h-screen'>
+      Hello world
     </div>
   )
 }
