@@ -35,19 +35,13 @@ const WorkflowAnimation = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-white">
+    <div className="min-h-screen flex items-center justify-center relative">
       <div className="text-center">
         <h1 className="text-6xl mb-10">Walk through our Workflow</h1>
         <div className="relative max-w-5xl mx-auto" ref={ref}>
           <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" className="svg-container">
             <motion.path
-              d="M 200 150
-                 V 350
-                 C 200 450, 300 450, 300 350
-                 H 500
-                 C 600 350, 600 450, 500 450
-                 H 200
-                 V 750"
+              d="M 200 150 V 300 H 600 V 300 H 600 V 600 H 200 V 600 H 200 V 750 "
               fill="none"
               stroke="black"
               strokeWidth="5px"
@@ -62,7 +56,7 @@ const WorkflowAnimation = () => {
             initial="hidden"
             animate={controls}
             variants={boxVariants}
-            style={{ top: '120px', left: '50px' }}
+            style={{ top: '0px', left: '50px' }}
           >
             <h2>Pre-Press</h2>
             <p>Utilizing design software such as CorelDRAW to import printed files onto CTP plates.</p>
@@ -72,7 +66,7 @@ const WorkflowAnimation = () => {
             initial="hidden"
             animate={controls}
             variants={boxVariants}
-            style={{ top: '320px', left: '400px' }}
+            style={{ top: '350px', left: '550px' }}
           >
             <h2>Press</h2>
             <p>Printing tasks for CPC, P14, P24, and P28 will be executed at this facility.</p>
@@ -82,7 +76,7 @@ const WorkflowAnimation = () => {
             initial="hidden"
             animate={controls}
             variants={boxVariants}
-            style={{ top: '650px', left: '50px' }}
+            style={{ top: '685px', left: '50px' }}
           >
             <h2>Post-Press</h2>
             <p>Job finishing tasks, such as cutting, die cutting, and scoring, will be carried out at this facility.</p>
