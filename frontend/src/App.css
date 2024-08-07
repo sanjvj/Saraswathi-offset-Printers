@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
 
-section{
-    scroll-snap-align: center;
-}
+
 
 
 
