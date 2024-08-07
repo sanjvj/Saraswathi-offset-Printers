@@ -29,7 +29,8 @@ body {
 
 .workflow-box {
   position: absolute;
-  width: 250px;
+  width: 300px;
+  height: 200px;
   background: rgba(0, 0, 0, 0.7); /* Darker background for the boxes */
   padding: 20px;
   border-radius: 10px;
@@ -39,8 +40,8 @@ body {
 }
 
 .workflow-box h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 26px;
 }
 
 .workflow-box p {

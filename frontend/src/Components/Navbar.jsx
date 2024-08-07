@@ -10,7 +10,7 @@ const Navbar = () => {
           
         </div>
         <div>
-          <ul className="flex gap-20 justify-end text-xl cursor-pointer mt-5 font-semibold">
+          <ul className=" text-gray-600 flex gap-20 justify-end text-xl cursor-pointer mt-5 font-normal">
             <li>Home</li>
             <li>About Us</li>
             <li>Workflow</li>
