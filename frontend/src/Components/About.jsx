@@ -12,7 +12,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="col-span-2 lg:col-span-1"
         >
-          <img className="rounded-lg" src="offset-1.jpg" alt="About Us" />
+          <img className="rounded-lg" src="offset-1.jpg" alt="About Us" loading='lazy' />
         </motion.div>
 
         <motion.div
@@ -51,7 +51,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="col-span-2 lg:col-span-1"
         >
-          <img className="rounded-lg" src="offset-2.jpg" alt="Our Mission" />
+          <img className="rounded-lg" src="offset-2.jpg" alt="Our Mission" loading='lazy' />
         </motion.div>
       </div>
 
@@ -62,7 +62,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="col-span-2 lg:col-span-1"
         >
-          <img className="rounded-lg" src="offset-3.jpg" alt="Our Vision" />
+          <img className="rounded-lg" src="offset-3.jpg" alt="Our Vision" loading='lazy' />
         </motion.div>
 
         <motion.div
